@@ -1,0 +1,33 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "SUMMIT"
+  description: "Backend for the Article Summarization Application."
+schemes:
+- "https"
+paths:
+  /upload:
+    post:
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: formData
+          name: file
+          type: file
+          required: true
+        - in: formData
+          name: language
+          type: string
+          required: false
+        - in: formData
+          name: userID
+          type: string
+          required: false
+      responses:
+        "200":
+          description: "200 response"
+        "403":
+          description: "403 response"
+        "500":
+          description: "500 response"

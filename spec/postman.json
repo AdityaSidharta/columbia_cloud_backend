@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "6a52cba0-0d17-4df7-9221-46d956bc4882",
+		"name": "finalproject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " https://7q3xdayda5.execute-api.us-east-1.amazonaws.com/dev/upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-amz-meta-userID",
+						"value": "adi",
+						"type": "default"
+					},
+					{
+						"key": "x-amz-meta-language",
+						"value": "de",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/home/aditya/git/columbia_cloud_backend/index.jpeg"
+					}
+				},
+				"url": {
+					"raw": "https://7q3xdayda5.execute-api.us-east-1.amazonaws.com/dev/upload",
+					"protocol": "https",
+					"host": [
+						"7q3xdayda5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
