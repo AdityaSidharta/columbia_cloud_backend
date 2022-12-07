@@ -21,7 +21,7 @@ paths:
           type: string
           required: false
         - in: formData
-          name: userID
+          name: userid
           type: string
           required: false
       responses:

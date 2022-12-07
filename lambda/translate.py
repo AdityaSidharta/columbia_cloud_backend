@@ -27,7 +27,7 @@ def lambda_handler(event, context):
     print("current_datetime : {}".format(current_datetime))
 
     input_image = event['body']
-    input_user_id = event['headers']['x-amz-meta-userID']
+    input_user_id = event['headers']['x-amz-meta-userid']
     input_language = event['headers']['x-amz-meta-language']
     print("input_image : {}".format(input_image))
     print("input_user_id : {}".format(input_user_id))
