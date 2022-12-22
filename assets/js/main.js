@@ -38,6 +38,15 @@ function upload(){
                 })
             };
             reader.readAsArrayBuffer(file);
+
+            fetch('https://swr83cch42.execute-api.us-east-1.amazonaws.com/test/triggerbucketsummit/' + file_name, {
+                method: 'PUT',
+                mode: 'cors',
+                headers: {
+                    "Content-Type" : "image/jpeg"
+                },
+                body: file
+            })
         }
     }
 }
